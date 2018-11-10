@@ -7,9 +7,11 @@
 <style>
 .button1 {
     background: 
+    width:150px;
+    height: 150px;
     border: none;
     color: White;
-    padding: 50px 50px;
+
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -18,15 +20,17 @@
     cursor: pointer;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 0%;
+    margin-top: 5%;
     margin-bottom: 0%;
-    background-size:490px;
+    
 }
 .button2 {
     background: 
+    width:150px;
+    height:150px;
     border: none;
     color: White;
-    padding: 50px 50px;
+
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -35,17 +39,17 @@
     cursor: pointer;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 0%;
-    background-size:490px;
+    margin-top: 5%;
     margin-bottom: 0%;
 
 
 }
 .button3 {
     background: 
+    width:150px;
+    height:150px;
     border: none;
     color: White;
-    padding: 50px 50px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -60,9 +64,10 @@
 }
 .button4 {
     background: 
-    border: none;
+    width:350px;
+    height:150px;
+    border: BLACK;
     color: White;
-    padding: 50px 50px;
     text-align: center;
     text-decoration: none;
     display: inline-block
@@ -77,31 +82,45 @@
 </head>
 <body>
 <center>
-<input type="image" img src="/public_works_v1.0/truck1.png" class="button1" value="Trash">
+	<br>
+<input type="image" img src="/public_works_v1.0/truck1.png" class="button1" id="button1">
+<script type="text/javascript">
+    document.getElementById("button1").onclick = function () 
+    {
+        location.href = "/public_works_v1.0/trash/trash.html";
+    };
+</script>
+
 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
 
 
-<input type="image" img src="/public_works_v1.0/tree.png" class="button2"  value="Potholes"><br>
+<input type="image" img src="/public_works_v1.0/tree.png" class="button2"  value="Potholes" id="button2"><br>
+<script type="text/javascript">
+    document.getElementById("button2").onclick = function () 
+    {
+        location.href = "/public_works_v1.0/trash/trash.html";
+    };
+</script>
+<input type="image" img src="/public_works_v1.0/Pothole.png" class="button3" value="Trees" id="button3">
+<script type="text/javascript">
+    document.getElementById("button3").onclick = function () 
+    {
+        location.href = "/public_works_v1.0/trash/trash.html";
+    };
+</script>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
 
-<input type="image" img src="/public_works_v1.0/tree.png" class="button3" value="Trees">
-&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-
-<input type="image" img src="/public_works_v1.0/Others.jpg" class="button4" value="Others">
+<input type="image" img src="/public_works_v1.0/Others.jpg" class="button4" value="Others" id="button4">
+<script type="text/javascript">
+    document.getElementById("button4").onclick = function () 
+    {
+        location.href = "/public_works_v1.0/trash/trash.html";
+    };
+</script>
 </center>
 </body>
 </html>
-
-
-<?php
-
-if (empty($_POST['username']) || empty($_POST['password'])) //Validating inputs using PHP code 
- { 
- echo 
- "Incorrect username or password"; //
- header("location: index.php");//You will be sent to Login.php for re-login 
- } 
- ?>
